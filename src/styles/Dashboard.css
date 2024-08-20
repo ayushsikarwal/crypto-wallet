@@ -1,6 +1,132 @@
+/* Dashboard.css */
 .dashboard {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #e0f7fa, #e9ecef); /* Soft gradient background */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard h1 {
+  font-size: 2.5rem;
+  color: #2b2e4a; /* Deep blue-grey color */
+  margin-bottom: 20px;
+  border-bottom: 3px solid #f76c6c; /* Vibrant coral border for the heading */
+  padding-bottom: 10px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.dashboard > * {
+  background: #ffffff; /* White background for each component */
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard > *:nth-child(odd) {
+  background: #f1f3f5; /* Light grey background for alternating components */
+}
+
+.dashboard > *:hover {
+  transform: translateY(-6px); /* Lift effect on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.dashboard > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* Accents and Typography */
+.dashboard h2 {
+  font-size: 1.85rem;
+  color: #f76c6c; /* Coral color for sub-headings */
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f76c6c;
+  padding-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.dashboard p {
+  color: #495057; /* Dark grey text color */
+  line-height: 1.6;
+}
+
+/* HistoricalData.css */
+.historical-data-container {
+  padding: 25px;
+  background: #ffffff; /* White background color */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.historical-data-container:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.historical-data-container h2 {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+  color: #2b2e4a; /* Deep blue-grey color */
+  letter-spacing: 0.5px;
+}
+
+.date-picker-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.date-picker-container .MuiTextField-root {
+  width: 100%;
+  max-width: 250px;
+}
+
+.date-picker-container .MuiTextField-root .MuiInputBase-root {
+  background: #ffffff; /* White background for input */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: box-shadow 0.3s ease;
+}
+
+.date-picker-container .MuiTextField-root .MuiInputBase-root:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.date-picker-container .MuiTextField-root .MuiInputBase-root .MuiInputBase-input {
+  padding: 14px; /* Adjust padding for better spacing */
+  font-size: 16px; /* Larger font size for better readability */
+  color: #2b2e4a; /* Deep blue-grey text color */
+}
+
+.date-picker-container .MuiTextField-root .MuiInputLabel-root {
+  color: #888; /* Darker label color for contrast */
+}
+
+.date-picker-container .MuiTextField-root .Mui-focused .MuiInputBase-input {
+  border-color: #f76c6c; /* Coral border color when focused */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 10px;
   }
-  
+
+  .dashboard h1 {
+    font-size: 2rem;
+  }
+
+  .dashboard > * {
+    padding: 15px;
+  }
+
+  .dashboard h2 {
+    font-size: 1.5rem;
+  }
+}

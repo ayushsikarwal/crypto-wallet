@@ -1,7 +1,69 @@
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif; /* Modern, clean font */
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa; /* Light background color for the entire page */
+  color: #333; /* Dark text color for better readability */
 }
 
+/* Dashboard Styles */
 .dashboard {
-  padding: 20px;
+  padding: 30px; /* Increased padding for a more spacious layout */
+  background: linear-gradient(135deg, #ffffff, #f1f3f5); /* Subtle gradient background for the dashboard */
+  border-radius: 15px; /* More rounded corners for a modern look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.dashboard:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover for more emphasis */
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.dashboard h1 {
+  font-size: 2.75rem; /* Larger font size for a more impactful heading */
+  color: #2b2e4a; /* Deep blue-grey color */
+  margin-bottom: 20px;
+  border-bottom: 3px solid #f76c6c; /* Coral border for the heading */
+  padding-bottom: 10px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.dashboard > * {
+  background: #ffffff; /* White background for each component */
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard > *:nth-child(odd) {
+  background: #f1f3f5; /* Light grey background for alternating components */
+}
+
+.dashboard > *:hover {
+  transform: translateY(-6px); /* Lift effect on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.dashboard > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* Accents and Typography */
+.dashboard h2 {
+  font-size: 1.85rem;
+  color: #f76c6c; /* Coral color for sub-headings */
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f76c6c;
+  padding-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.dashboard p {
+  color: #495057; /* Dark grey text color */
+  line-height: 1.6;
 }

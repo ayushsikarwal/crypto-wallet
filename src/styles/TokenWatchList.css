@@ -1,0 +1,94 @@
+/* TokenWatchList.css */
+.token-watch-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 25px;
+  background: linear-gradient(135deg, #f0f4f8, #e9ecef); /* Soft gradient background */
+  border-radius: 12px; /* More rounded corners for a sleek look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.token-watch-list:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: translateY(-4px); /* Slight lift effect on hover */
+}
+
+.token-watch-list h2 {
+  margin-bottom: 15px;
+  font-size: 1.85rem;
+  color: #2b2e4a; /* Deep blue-grey color */
+  border-bottom: 2px solid #f76c6c; /* Coral color for the border */
+  padding-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.token-watch-list input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.token-watch-list input:focus {
+  border-color: #f76c6c; /* Coral border on focus */
+  box-shadow: 0 0 5px rgba(247, 108, 108, 0.5); /* Glow effect on focus */
+}
+
+.token-watch-list button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff; /* Vibrant blue color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  align-self: flex-end; /* Align button to the right */
+}
+
+.token-watch-list button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.token-watch-list button:active {
+  background-color: #004080; /* Darker blue on click */
+}
+
+.token-watch-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Full width to match the input and button */
+}
+
+.token-watch-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  color: #495057; /* Dark grey text color */
+  transition: background-color 0.3s ease;
+}
+
+.token-watch-list li:hover {
+  background-color: #f1f3f5; /* Light grey background on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .token-watch-list {
+    padding: 15px;
+  }
+
+  .token-watch-list h2 {
+    font-size: 1.6rem;
+  }
+
+  .token-watch-list button {
+    width: 100%; /* Full width on smaller screens */
+  }
+}

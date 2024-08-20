@@ -5,7 +5,8 @@ import HistoricalData from '../components/HistoricalData';
 import Allowance from '../components/Allowance';
 import TokenTransfer from '../components/TokenTransfer';
 import '../styles/Dashboard.css';
-
+import '../styles/TokenWatchList.css';
+import '../styles/TokenTransfer.css';
 function Dashboard() {
   return (
     <div className="dashboard">
@@ -18,5 +19,6 @@ function Dashboard() {
     </div>
   );
 }
+
 
 export default Dashboard;

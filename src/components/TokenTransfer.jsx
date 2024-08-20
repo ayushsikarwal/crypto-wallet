@@ -29,7 +29,7 @@ function TokenTransfer() {
   };
 
   return (
-    <div>
+    <div className="token-transfer">
       <h2>Token Transfer</h2>
       <form onSubmit={(e) => { e.preventDefault(); handleTransfer(); }}>
         <label>
@@ -53,7 +53,7 @@ function TokenTransfer() {
         </label>
         <button type="submit">Transfer</button>
       </form>
-      {status && <p>{status}</p>}
+      {status && <p className="status-message">{status}</p>}
     </div>
   );
 }

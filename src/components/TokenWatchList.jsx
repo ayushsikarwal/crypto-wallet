@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 function TokenWatchList() {
   const [tokens, setTokens] = useState([]);
   const [newToken, setNewToken] = useState('');
@@ -12,8 +11,8 @@ function TokenWatchList() {
   };
 
   return (
-    <div>
-      <h2>Token Watch List</h2>
+    <div className="token-watch-list">
+      <h2 >Token Watch List</h2>
       <input
         type="text"
         value={newToken}

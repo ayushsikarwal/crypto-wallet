@@ -1,6 +1,105 @@
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+/* TokenTransfer.css */
+.token-transfer {
+  width: 97%;
+  margin: 0 auto;
+  padding: 25px;
+  background: linear-gradient(135deg, #f7f9fc, #e9ecef); /* Soft gradient background */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.token-transfer:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: translateY(-4px); /* Slight lift effect on hover */
+}
+
+.token-transfer h2 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  color: #2b2e4a; /* Deep blue-grey color */
+  border-bottom: 2px solid #f76c6c; /* Vibrant coral border */
+  padding-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.token-transfer form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.token-transfer label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #495057; /* Dark grey color */
+  font-size: 1rem;
+}
+
+.token-transfer input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.token-transfer input:focus {
+  border-color: #f76c6c; /* Coral border on focus */
+  box-shadow: 0 0 5px rgba(247, 108, 108, 0.5); /* Glow effect on focus */
+}
+
+.token-transfer button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff; /* Vibrant blue color */
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  align-self: flex-end; /* Align button to the right */
+}
+
+.token-transfer button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.token-transfer button:active {
+  background-color: #004080; /* Darker blue on click */
+}
+
+.status-message {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #f76c6c; /* Coral color for status messages */
+}
+
+.parent-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .token-transfer {
+    padding: 15px;
   }
-  
+
+  .token-transfer h2 {
+    font-size: 1.5rem;
+  }
+
+  .token-transfer button {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
